@@ -1,0 +1,24 @@
+require("lazy").setup({
+  { import = "plugins.arduino" },
+  { import = "plugins.barbar" },
+  { import = "plugins.cmp" },
+  { import = "plugins.core" },
+  { import = "plugins.dashboard" },
+  { import = "plugins.flash" },
+  { import = "plugins.lsp" },
+  { import = "plugins.lualine" },
+  { import = "plugins.render-markdown" },
+  { import = "plugins.mini-surround" },
+  { import = "plugins.obsidian" },
+  { import = "plugins.oil" },
+  { import = "plugins.telescope" },
+  { import = "plugins.toggleterm" },
+  { import = "plugins.treesitter" },
+  { import = "plugins.treesj" },
+  { import = "plugins.twilight" },
+
+  install = {
+    colorscheme = { "camellia" },
+  },
+  lockfile = false,
+})
