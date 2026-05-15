@@ -1,6 +1,7 @@
+local autocmd = vim.api.nvim_create_autocmd
+
 -- highlight on yank
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
+autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
   callback = function()
     vim.highlight.on_yank()
@@ -8,7 +9,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- remove trailing whitespaces on save
-vim.api.nvim_create_autocmd("BufWritePre", {
+autocmd("BufWritePre", {
     callback = function()
         local save_cursor = vim.fn.getpos(".")
         vim.cmd([[%s/\s\+$//e]])
@@ -16,8 +17,25 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     end,
 })
 
--- spellcheck in md
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "markdown",
-	command = "setlocal spell wrap",
+-- spellcheck in .md
+autocmd("FileType", {
+    pattern = "markdown",
+    command = "setlocal spell wrap",
+})
+
+-- change local directory to file's parent
+autocmd({ "BufEnter", "BufWinEnter" }, {
+  callback = function()
+    local file = vim.api.nvim_buf_get_name(0)
+    if file ~= "" and vim.fn.filereadable(file) == 1 then
+      local dir = vim.fn.fnamemodify(file, ":h")
+      vim.cmd("lcd " .. vim.fn.fnameescape(dir))
+    end
+  end,
+})
+
+-- automatically split help buffers to the right
+autocmd("FileType", {
+    pattern = "help",
+    command = "wincmd L",
 })
