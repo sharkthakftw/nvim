@@ -15,3 +15,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         vim.fn.setpos(".", save_cursor)
     end,
 })
+
+-- spellcheck in md
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "markdown",
+	command = "setlocal spell wrap",
+})

@@ -11,6 +11,7 @@ require("lazy").setup({
   { import = "plugins.mini-surround" },
   { import = "plugins.obsidian" },
   { import = "plugins.oil" },
+  { import = "plugins.tabout" },
   { import = "plugins.telescope" },
   { import = "plugins.toggleterm" },
   { import = "plugins.treesitter" },
