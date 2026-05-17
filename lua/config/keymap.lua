@@ -84,4 +84,4 @@ map("n", "<leader>W", ":set wrap!<CR>")
 map("n", "<leader>S", ":%s/")
 map("n", "<leader>R", ":so %<CR>") -- reload neovim config
 map("n", "<Esc>", "<cmd>noh<CR>") -- clear search highlights
-map('n', '<leader>vs', ':vsplit<CR>:bnext<CR>') --ver split + open next buffer
+map('n', '<leader>vs', '<cmd>vsplit<CR><cmd>bnext<CR>') --ver split + open next buffer

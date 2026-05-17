@@ -10,6 +10,7 @@ autocmd('TextYankPost', {
 
 -- remove trailing whitespaces on save
 autocmd("BufWritePre", {
+    pattern = "*.md",
     callback = function()
         local save_cursor = vim.fn.getpos(".")
         vim.cmd([[%s/\s\+$//e]])
