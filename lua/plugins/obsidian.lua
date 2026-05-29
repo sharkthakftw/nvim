@@ -7,7 +7,7 @@ return {
       "nvim-lua/plenary.nvim",
   },
   opts = {
-    dir = "~/Obsidian/sharkthak/",
+    dir = "~/Obsidian/",
     disable_frontmatter = true,
     attachments = {img_folder = "Attachments"},
     completion = {

@@ -28,10 +28,10 @@ return {
             { desc = 'Lazy', group = 'DashboardShortCut', key = 'l', action = 'Lazy' },
             { desc = 'Quit', group = 'DashboardShortCut', key = 'q', action = 'q' },
           },
-          footer = { '', 'Hi, Sarthak' },
+          footer = { '', 'hi, sharkthak' },
           highlight = {
-            DashboardHeader = { fg = '#c75465' },
-            DashboardShortCut = { fg = '#c75465' },
+            DashboardHeader = { fg = '#C75465' },
+            DashboardShortCut = { fg = '#C75465' },
           },
         },
       })

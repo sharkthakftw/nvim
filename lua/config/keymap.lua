@@ -76,12 +76,24 @@ map("n", "<leader>os", ":ObsidianSearch<CR>", { desc = "Obsidian search" })
 map("n", "<leader>ol", ":ObsidianLinks<CR>", { desc = "Obsidian links in current buffer" })
 map("n", "<leader>opi", ":ObsidianPasteImg<CR>", { desc = "Obsidian paste image" })
 
+-- render-markdown
+map("n", "<leader>rt", "<cmd>RenderMarkdown buf_toggle<CR>")
+map("n", "<leader>rp", "<cmd>RenderMarkdown preview<CR>")
+
 -- useful maps
 map("n", "<leader>w", "<cmd>update<CR>")
 map("n", "<leader>q", "<cmd>q<CR>")
 map({"n", "v"}, "<leader>n", ":norm")
-map("n", "<leader>W", ":set wrap!<CR>")
+map("n", "<leader>W", ":set wrap!<CR>", { desc = "toggle wrap" })
 map("n", "<leader>S", ":%s/")
 map("n", "<leader>R", ":so %<CR>") -- reload neovim config
 map("n", "<Esc>", "<cmd>noh<CR>") -- clear search highlights
-map('n', '<leader>vs', '<cmd>vsplit<CR><cmd>bnext<CR>') --ver split + open next buffer
+map('n', '<leader>vs', '<cmd>vsplit<CR> <cmd>bnext<CR>') --ver split + open next buffer
+
+map("n", "H", "^")
+map("n", "L", "g_")
+
+map("n", "<C-u>", "<C-u> zz")
+map("n", "<C-d>", "<C-d> zz")
+map("n", "<C-i>", "<C-i> zz")
+map("n", "<C-o>", "<C-o> zz")
