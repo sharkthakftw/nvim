@@ -34,6 +34,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.hlsearch = true
 opt.incsearch = true
+opt.inccommand = "split"
 
 -- files
 opt.swapfile = false
@@ -57,9 +58,9 @@ opt.confirm = true
 opt.showbreak = "↪ "
 opt.list = true
 opt.listchars = {
-  tab = "» ",
-  trail = "·",
-  nbsp = "␣"
+    tab = "» ",
+    trail = "·",
+    nbsp = "␣"
 }
 
 vim.api.nvim_set_hl(0, "HighlightUndo", { bg = "#2d3a2d" })

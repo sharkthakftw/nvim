@@ -1,17 +1,17 @@
 vim.g.mapleader = " "
-vim.g.maplocalleader= " "
+vim.g.maplocalleader = " "
 local map = vim.keymap.set
 
 map("n", "-", "<cmd>Oil --float<CR>", { desc = "Open parent directory" }) -- oil
-map("n", "_", "<cmd>Dashboard<CR>") -- dashboard
-map("n", "<leader>T", "<cmd>Twilight<CR>", { desc = "twilight" }) -- twilight
+map("n", "_", "<cmd>Dashboard<CR>")                                       -- dashboard
+map("n", "<leader>T", "<cmd>Twilight<CR>", { desc = "twilight" })         -- twilight
 
 -- explorer
 map("n", "<leader>sE", ":Telescope file_browser<CR>", { desc = "Open Explorer" })
 map("n", "<leader>se", function()
-  require("telescope").extensions.file_browser.file_browser({
-    path = "%:p:h", cwd = vim.fn.expand("%:p:h")
-  })
+    require("telescope").extensions.file_browser.file_browser({
+        path = "%:p:h", cwd = vim.fn.expand("%:p:h")
+    })
 end, { desc = "File Browser (current file dir)" })
 
 -- toggle relative and absolute line numbers
@@ -83,17 +83,18 @@ map("n", "<leader>rp", "<cmd>RenderMarkdown preview<CR>")
 -- useful maps
 map("n", "<leader>w", "<cmd>update<CR>")
 map("n", "<leader>q", "<cmd>q<CR>")
-map({"n", "v"}, "<leader>n", ":norm")
+map({ "n", "v" }, "<leader>n", ":norm")
 map("n", "<leader>W", ":set wrap!<CR>", { desc = "toggle wrap" })
 map("n", "<leader>S", ":%s/")
-map("n", "<leader>R", ":so %<CR>") -- reload neovim config
-map("n", "<Esc>", "<cmd>noh<CR>") -- clear search highlights
-map('n', '<leader>vs', '<cmd>vsplit<CR> <cmd>bnext<CR>') --ver split + open next buffer
+map("n", "<leader>R", ":so %<CR>")                             -- reload neovim config
+map("n", "<Esc>", "<cmd>noh<CR>")                              -- clear search highlights
+map('n', '<leader>vs', '<cmd>vsplit<CR> <cmd>bnext<CR>')       -- ver split + open next buffer
+map("n", "<leader>f", vim.lsp.buf.format, { desc = "format" }) -- format
 
 map("n", "H", "^")
 map("n", "L", "g_")
 
-map("n", "<C-u>", "<C-u> zz")
-map("n", "<C-d>", "<C-d> zz")
-map("n", "<C-i>", "<C-i> zz")
-map("n", "<C-o>", "<C-o> zz")
+map("n", "<C-u>", "<C-u>zz")
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-i>", "<C-i>zz")
+map("n", "<C-o>", "<C-o>zz")

@@ -5,19 +5,19 @@ vim.g.colors_name = 'oxocarbon'
 local set = vim.api.nvim_set_hl
 
 local c = {
-  bg = '#161616',
-  bg_alt = '#1e1e1e',
-  fg = '#e0e0e0',
-  fg_dim = '#b5b5b5',
-  comment = '#5c5c5c',
-  blue = '#6199d6',
-  cyan = '#2fa4cb',
-  green = '#3aa16e',
-  yellow = '#d0b441',
-  orange = '#cc6e3e',
-  red = '#cc4f6c',
-  purple = '#9b7fc7',
-  magenta = '#c678dd',
+    bg = '#161616',
+    bg_alt = '#1e1e1e',
+    fg = '#e0e0e0',
+    fg_dim = '#b5b5b5',
+    comment = '#5c5c5c',
+    blue = '#6199d6',
+    cyan = '#2fa4cb',
+    green = '#3aa16e',
+    yellow = '#d0b441',
+    orange = '#cc6e3e',
+    red = '#cc4f6c',
+    purple = '#9b7fc7',
+    magenta = '#c678dd',
 }
 
 -- UI
