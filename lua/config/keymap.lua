@@ -76,6 +76,8 @@ map("n", "<leader>os", ":ObsidianSearch<CR>", { desc = "Obsidian search" })
 map("n", "<leader>ol", ":ObsidianLinks<CR>", { desc = "Obsidian links in current buffer" })
 map("n", "<leader>opi", ":ObsidianPasteImg<CR>", { desc = "Obsidian paste image" })
 
+-- lazygit
+map("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = "lazygit" })
 -- render-markdown
 map("n", "<leader>rt", "<cmd>RenderMarkdown buf_toggle<CR>")
 map("n", "<leader>rp", "<cmd>RenderMarkdown preview<CR>")

@@ -5,6 +5,7 @@ require("lazy").setup({
     { import = "plugins.core" },
     { import = "plugins.dashboard" },
     { import = "plugins.flash" },
+    { import = "plugins.lazygit" },
     { import = "plugins.lsp" },
     { import = "plugins.lualine" },
     { import = "plugins.obsidian" },
