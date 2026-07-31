@@ -17,7 +17,7 @@ opt.sidescrolloff = 8
 opt.showmode = false
 opt.cmdheight = 1
 opt.winborder = "rounded"
-opt.conceallevel = 2
+opt.conceallevel = 0
 opt.concealcursor = "nc"
 
 -- tabs & Indentations
