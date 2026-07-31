@@ -22,7 +22,6 @@ personal neovim configuration.
 | [flash.nvim](https://github.com/folke/flash.nvim) | fast navigation & jump motions |
 | [treesj](https://github.com/Wansmer/treesj) | split/join blocks of code |
 | [dashboard.nvim](https://github.com/nvimdev/dashboard-nvim) | start screen |
-| [twilight.nvim](https://github.com/folke/twilight.nvim) | dim inactive code |
 | [arduino.nvim](https://github.com/yuukiflow/Arduino-Nvim) | arduino development support |
 
 ---

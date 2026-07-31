@@ -15,7 +15,6 @@ require("lazy").setup({
     { import = "plugins.toggleterm" },
     { import = "plugins.treesitter" },
     { import = "plugins.treesj" },
-    { import = "plugins.twilight" },
 
     install = { colorscheme = { "camellia" } },
     lockfile = false,
