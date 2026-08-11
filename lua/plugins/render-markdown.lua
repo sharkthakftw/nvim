@@ -84,7 +84,7 @@ return {
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {
-        enabled = false,
+        enabled = true,
         completions = { lsp = { enabled = true } },
     },
     config = function(_, opts)
