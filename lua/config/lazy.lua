@@ -11,6 +11,7 @@ require("lazy").setup({
     { import = "plugins.obsidian" },
     { import = "plugins.render-markdown" },
     { import = "plugins.oil" },
+    { import = "plugins.outline" },
     { import = "plugins.telescope" },
     { import = "plugins.toggleterm" },
     { import = "plugins.treesitter" },
