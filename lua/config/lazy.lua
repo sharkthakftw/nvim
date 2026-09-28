@@ -16,6 +16,7 @@ require("lazy").setup({
     { import = "plugins.toggleterm" },
     { import = "plugins.treesitter" },
     { import = "plugins.treesj" },
+    { dir = "/home/sharkthak/Projects/wikid.nvim", cmd = { "Wikid", "WikidToggle" } },
 
     install = { colorscheme = { "camellia" } },
     lockfile = false,

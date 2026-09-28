@@ -4,6 +4,7 @@ local map = vim.keymap.set
 
 map("n", "-", "<cmd>Oil --float<CR>", { desc = "Open parent directory" }) -- oil
 map("n", "_", "<cmd>Dashboard<CR>")                                       -- dashboard
+map("n", "<leader>kd", "<cmd>Wikid<CR>")                                  -- wikid
 
 -- explorer
 map("n", "<leader>sE", ":Telescope file_browser<CR>", { desc = "Open Explorer" })
